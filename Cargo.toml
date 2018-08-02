@@ -1,0 +1,6 @@
+[package]
+name = "strayhorn"
+version = "0.1.0"
+authors = ["Adam Harries <adam.harries@codeplay.com>"]
+
+[dependencies]
