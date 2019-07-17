@@ -4,5 +4,7 @@ version = "0.1.0"
 authors = ["Adam Harries <adam.harries@codeplay.com>"]
 
 [dependencies]
-rocket = "0.3.15"
-rocket_codegen = "0.3.15"
+rocket = "0.4.2"
+rocket_codegen = "0.4.2"
+multipart = "0.16.1"
+tempfile="3.1.0"
