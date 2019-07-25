@@ -33,7 +33,7 @@ use std::io::{Error, ErrorKind};
 use std::path::PathBuf;
 
 #[get("/")]
-fn index() -> NamedFile {
+fn index() -> io::Result<NamedFile> {
     NamedFile::open("form.html")
 }
 #[post("/upload", data = "<data>")]
