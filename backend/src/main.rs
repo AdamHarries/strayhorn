@@ -33,8 +33,8 @@ use std::io::{Error, ErrorKind};
 use std::path::PathBuf;
 
 #[get("/")]
-fn index() -> &'static str {
-    "Hello world! "
+fn index() -> NamedFile {
+    NamedFile::open("form.html");
 }
 #[post("/upload", data = "<data>")]
 // signature requires the request to have a `Content-Type`
