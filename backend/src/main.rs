@@ -34,7 +34,7 @@ use std::path::PathBuf;
 
 #[get("/")]
 fn index() -> NamedFile {
-    NamedFile::open("form.html");
+    NamedFile::open("form.html")
 }
 #[post("/upload", data = "<data>")]
 // signature requires the request to have a `Content-Type`
